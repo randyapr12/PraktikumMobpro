@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:login_register/screen/register_page.dart';
 import 'package:login_register/utils/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class LoginPage extends StatelessWidget {
+class RegisterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +18,7 @@ class LoginPage extends StatelessWidget {
             ),
             SizedBox(height: 10),
             Text(
-              'LOGIN',
+              'REGISTER',
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 20),
@@ -69,14 +68,28 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(
+              height: 15,
+            ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(200, 0, 40,
-                  0), // Pindahkan ke kanan dengan jarak kiri 200 dan jarak kanan 40
-              child: TextButton(
-                onPressed: () {},
-                child: Text(
-                  'Forget Password?',
-                  style: TextStyle(color: Colors.black),
+              padding: const EdgeInsets.symmetric(horizontal: 40),
+              child: Container(
+                width: 280,
+                height: 46,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: bgColor, // Tambahkan warna pada kolom password
+                ),
+                child: TextField(
+                  style: TextStyle(fontSize: 14), // Ubah ukuran font menjadi 12
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(
+                          10), // Tambahkan borderRadius pada border
+                    ),
+                    labelText: 'Re-type Password',
+                  ),
                 ),
               ),
             ),
@@ -96,23 +109,11 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
                 child: Text(
-                  'Login',
+                  'Register',
                   style: TextStyle(
                       fontSize: 12,
                       color: Colors.white), // Tambahkan warna teks putih
                 ),
-              ),
-            ),
-            TextButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => RegisterPage()),
-                );
-              },
-              child: Text(
-                'Not registered yet? Create Account',
-                style: TextStyle(color: Colors.black),
               ),
             ),
           ],
