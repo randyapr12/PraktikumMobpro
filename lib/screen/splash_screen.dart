@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:login_register/screen/login_page.dart';
 import 'package:login_register/utils/colors.dart';
 
+
+
 class SplashScreen extends StatefulWidget {
   @override
   _SplashScreenState createState() => _SplashScreenState();

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_register/screen/home_page.dart';
 import 'package:login_register/screen/register_page.dart';
 import 'package:login_register/utils/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -83,23 +84,25 @@ class LoginPage extends StatelessWidget {
             SizedBox(
               height: 14,
             ),
-            Container(
-              width: 100,
-              height: 28,
-              child: ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  primary: boxLogin, // Tambahkan warna merah
-                  shape: RoundedRectangleBorder(
-                    borderRadius:
-                        BorderRadius.circular(20), // Tambahkan radius 20
-                  ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HomePage()),
+                );
+              },
+              style: ElevatedButton.styleFrom(
+                primary: boxLogin, // Tambahkan warna merah
+                shape: RoundedRectangleBorder(
+                  borderRadius:
+                      BorderRadius.circular(20), // Tambahkan radius 20
                 ),
-                child: Text(
-                  'Login',
-                  style: TextStyle(
-                      fontSize: 12,
-                      color: Colors.white), // Tambahkan warna teks putih
+              ),
+              child: Text(
+                'Login',
+                style: TextStyle(
+                  fontSize: 12,
+                  color: Colors.white, // Tambahkan warna teks putih
                 ),
               ),
             ),
