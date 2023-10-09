@@ -20,90 +20,131 @@ class HomePage extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                SizedBox(height: 16),
+                SizedBox(height: 31),
+                Center(
+                  child: Container(
+                    width: 290,
+                    height: 113,
+                    decoration: BoxDecoration(
+                      color: boxHome,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 31),
                 Row(
                   children: [
                     Flexible(
                       flex: 1,
                       child: LayoutBuilder(
                         builder: (context, constraints) {
-                          return Container(
-                            width: constraints.maxWidth,
-                            height: 100,
-                            color: Colors.red,
+                          return Center(
+                            child: Container(
+                              width: 130,
+                              height: 130,
+                              decoration: BoxDecoration(
+                                color: boxHome,
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                            ),
                           );
                         },
                       ),
                     ),
-                    SizedBox(width: 16),
+                    SizedBox(width: 30),
                     Flexible(
                       flex: 1,
                       child: LayoutBuilder(
                         builder: (context, constraints) {
-                          return Container(
-                            width: constraints.maxWidth,
-                            height: 100,
-                            color: Colors.blue,
+                          return Center(
+                            child: Container(
+                              width: 130,
+                              height: 130,
+                              decoration: BoxDecoration(
+                                color: boxHome,
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                            ),
                           );
                         },
                       ),
                     ),
                   ],
                 ),
-                SizedBox(height: 16),
+                SizedBox(height: 31),
                 Row(
                   children: [
                     Flexible(
                       flex: 1,
                       child: LayoutBuilder(
                         builder: (context, constraints) {
-                          return Container(
-                            width: constraints.maxWidth,
-                            height: 100,
-                            color: Colors.green,
+                          return Center(
+                            child: Container(
+                              width: 130,
+                              height: 130,
+                              decoration: BoxDecoration(
+                                color: boxHome,
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                            ),
                           );
                         },
                       ),
                     ),
-                    SizedBox(width: 16),
+                    SizedBox(width: 30),
                     Flexible(
                       flex: 1,
                       child: LayoutBuilder(
                         builder: (context, constraints) {
-                          return Container(
-                            width: constraints.maxWidth,
-                            height: 100,
-                            color: Colors.yellow,
+                          return Center(
+                            child: Container(
+                              width: 130,
+                              height: 130,
+                              decoration: BoxDecoration(
+                                color: boxHome,
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                            ),
                           );
                         },
                       ),
                     ),
                   ],
                 ),
-                SizedBox(height: 16),
+                SizedBox(height: 31),
                 Row(
                   children: [
                     Flexible(
                       flex: 1,
                       child: LayoutBuilder(
                         builder: (context, constraints) {
-                          return Container(
-                            width: constraints.maxWidth,
-                            height: 100,
-                            color: Colors.orange,
+                          return Center(
+                            child: Container(
+                              width: 130,
+                              height: 130,
+                              decoration: BoxDecoration(
+                                color: boxHome,
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                            ),
                           );
                         },
                       ),
                     ),
-                    SizedBox(width: 16),
+                    SizedBox(width: 30),
                     Flexible(
                       flex: 1,
                       child: LayoutBuilder(
                         builder: (context, constraints) {
-                          return Container(
-                            width: constraints.maxWidth,
-                            height: 100,
-                            color: Colors.purple,
+                          return Center(
+                            child: Container(
+                              width: 130,
+                              height: 130,
+                              decoration: BoxDecoration(
+                                color: boxHome,
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                            ),
                           );
                         },
                       ),
