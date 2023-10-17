@@ -6,21 +6,21 @@ class RegisterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       backgroundColor: bgColor,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Image.asset(
-              'web/assets/logo.png', 
+              'web/assets/logo.png',
               width: 114,
               height: 206,
             ),
             SizedBox(height: 10),
             Text(
               'REGISTER',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              style: GoogleFonts.poppins(
+                  fontSize: 20, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 20),
             Padding(
@@ -30,14 +30,13 @@ class RegisterPage extends StatelessWidget {
                 height: 46,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: bgColor, 
+                  color: bgColor,
                 ),
                 child: TextField(
-                  style: TextStyle(fontSize: 14), 
+                  style: GoogleFonts.poppins(fontSize: 14),
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(
-                          10), 
+                      borderRadius: BorderRadius.circular(10),
                     ),
                     labelText: 'Email or Number Phone',
                   ),
@@ -54,15 +53,14 @@ class RegisterPage extends StatelessWidget {
                 height: 46,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: bgColor, 
+                  color: bgColor,
                 ),
                 child: TextField(
-                  style: TextStyle(fontSize: 14), 
+                  style: GoogleFonts.poppins(fontSize: 14),
                   obscureText: true,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(
-                          10), 
+                      borderRadius: BorderRadius.circular(10),
                     ),
                     labelText: 'Password',
                   ),
@@ -79,10 +77,10 @@ class RegisterPage extends StatelessWidget {
                 height: 46,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: bgColor, 
+                  color: bgColor,
                 ),
                 child: TextField(
-                  style: TextStyle(fontSize: 14), 
+                  style: GoogleFonts.poppins(fontSize: 14),
                   obscureText: true,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
@@ -103,17 +101,14 @@ class RegisterPage extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                  primary: boxLogin, 
+                  primary: boxLogin,
                   shape: RoundedRectangleBorder(
-                    borderRadius:
-                        BorderRadius.circular(20), 
+                    borderRadius: BorderRadius.circular(20),
                   ),
                 ),
                 child: Text(
                   'Register',
-                  style: TextStyle(
-                      fontSize: 12,
-                      color: Colors.white), 
+                  style: GoogleFonts.poppins(fontSize: 12, color: Colors.white),
                 ),
               ),
             ),

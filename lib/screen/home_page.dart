@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
               children: [
                 Text(
                   'Home',
-                  style: TextStyle(
+                  style: GoogleFonts.poppins(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
                   ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:login_register/utils/colors.dart';
 
 class UserProfilePage extends StatelessWidget {
@@ -20,7 +21,7 @@ class UserProfilePage extends StatelessWidget {
           ),
           title: Text(
             'User Profile',
-            style: TextStyle(color: Colors.black),
+            style: GoogleFonts.poppins(color: Colors.black),
           ),
         ),
         backgroundColor: bgColor,
@@ -47,14 +48,15 @@ class UserProfilePage extends StatelessWidget {
                 SizedBox(height: 20),
                 Text(
                   'Randy April',
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  style: GoogleFonts.poppins(
+                      fontSize: 20, fontWeight: FontWeight.bold),
                 ),
                 SizedBox(
                   height: 20,
                 ),
                 Text(
                   'Email',
-                  style: TextStyle(fontSize: 12),
+                  style: GoogleFonts.poppins(fontSize: 12),
                 ),
                 SizedBox(
                   height: 5,
@@ -69,7 +71,7 @@ class UserProfilePage extends StatelessWidget {
                   child: Center(
                     child: Text(
                       'rannsxxxx012@gmail.com',
-                      style: TextStyle(
+                      style: GoogleFonts.poppins(
                         color: Colors.black,
                         fontSize: 14,
                       ),
@@ -79,7 +81,7 @@ class UserProfilePage extends StatelessWidget {
                 SizedBox(height: 20),
                 Text(
                   'Number Phone',
-                  style: TextStyle(fontSize: 12),
+                  style: GoogleFonts.poppins(fontSize: 12),
                 ),
                 SizedBox(
                   height: 5,
@@ -94,7 +96,7 @@ class UserProfilePage extends StatelessWidget {
                   child: Center(
                     child: Text(
                       '+6287876765454',
-                      style: TextStyle(
+                      style: GoogleFonts.poppins(
                         color: Colors.black,
                         fontSize: 14,
                       ),
@@ -104,7 +106,7 @@ class UserProfilePage extends StatelessWidget {
                 SizedBox(height: 20),
                 Text(
                   'Address',
-                  style: TextStyle(fontSize: 12),
+                  style: GoogleFonts.poppins(fontSize: 12),
                 ),
                 SizedBox(
                   height: 5,
@@ -119,7 +121,7 @@ class UserProfilePage extends StatelessWidget {
                   child: Center(
                     child: Text(
                       'Jalan Merpati 69',
-                      style: TextStyle(
+                      style: GoogleFonts.poppins(
                         color: Colors.black,
                         fontSize: 14,
                       ),

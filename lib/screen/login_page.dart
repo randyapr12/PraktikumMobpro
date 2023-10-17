@@ -8,14 +8,13 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       backgroundColor: bgColor,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Image.asset(
-              'web/assets/logo.png', 
+              'web/assets/logo.png',
               width: 114,
               height: 206,
             ),
@@ -24,7 +23,8 @@ class LoginPage extends StatelessWidget {
             ),
             Text(
               'LOGIN',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              style: GoogleFonts.poppins(
+                  fontSize: 20, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 10),
             Padding(
@@ -34,14 +34,13 @@ class LoginPage extends StatelessWidget {
                 height: 46,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: bgColor, 
+                  color: bgColor,
                 ),
                 child: TextField(
-                  style: TextStyle(fontSize: 12), 
+                  style: GoogleFonts.poppins(fontSize: 12),
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(
-                          10), 
+                      borderRadius: BorderRadius.circular(10),
                     ),
                     labelText: 'Email or Number Phone',
                   ),
@@ -58,15 +57,14 @@ class LoginPage extends StatelessWidget {
                 height: 46,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: bgColor, 
+                  color: bgColor,
                 ),
                 child: TextField(
-                  style: TextStyle(fontSize: 12), 
+                  style: GoogleFonts.poppins(fontSize: 12),
                   obscureText: true,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(
-                          10), 
+                      borderRadius: BorderRadius.circular(10),
                     ),
                     labelText: 'Password',
                   ),
@@ -77,13 +75,12 @@ class LoginPage extends StatelessWidget {
               height: 5,
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(200, 0, 40,
-                  0), 
+              padding: const EdgeInsets.fromLTRB(200, 0, 40, 0),
               child: TextButton(
                 onPressed: () {},
                 child: Text(
                   'Forget Password?',
-                  style: TextStyle(fontSize: 12, color: Colors.black),
+                  style: GoogleFonts.poppins(fontSize: 12, color: Colors.black),
                 ),
               ),
             ),
@@ -98,17 +95,16 @@ class LoginPage extends StatelessWidget {
                 );
               },
               style: ElevatedButton.styleFrom(
-                primary: boxLogin, 
+                primary: boxLogin,
                 shape: RoundedRectangleBorder(
-                  borderRadius:
-                      BorderRadius.circular(20), 
+                  borderRadius: BorderRadius.circular(20),
                 ),
               ),
               child: Text(
                 'Login',
-                style: TextStyle(
+                style: GoogleFonts.poppins(
                   fontSize: 12,
-                  color: Colors.white, 
+                  color: Colors.white,
                 ),
               ),
             ),
@@ -121,7 +117,7 @@ class LoginPage extends StatelessWidget {
               },
               child: Text(
                 'Not registered yet? Create Account',
-                style: TextStyle(color: Colors.black),
+                style: GoogleFonts.poppins(color: Colors.black),
               ),
             ),
           ],
