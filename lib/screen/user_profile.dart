@@ -1,72 +1,139 @@
 import 'package:flutter/material.dart';
+import 'package:login_register/utils/colors.dart';
 
 class UserProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: bgColor,
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
-            Navigator.pop(context); // Navigasi kembali ke halaman sebelumnya
+            Navigator.pop(context);
           },
         ),
         title: Text('User Profile'),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            CircleAvatar(
-              radius: 60,
-              backgroundImage: AssetImage(
-                  'web/assets/profile.png'), // Ganti dengan gambar profil pengguna
-            ),
-            SizedBox(height: 20),
-            Text(
-              'John Doe', // Ganti dengan nama pengguna
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
+      body: Container(
+        color: bgColor, // Set the background color to purple
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                padding: EdgeInsets.only(top: 50, left: 134, right: 134),
+                child: CircleAvatar(
+                  radius: 60,
+                  backgroundImage: AssetImage('web/assets/profile.png'),
+                ),
               ),
-            ),
-            SizedBox(height: 10),
-            Text(
-              'johndoe@gmail.com', // Ganti dengan email pengguna
-              style: TextStyle(
-                fontSize: 16,
+              SizedBox(height: 10),
+              Center(
+                child: Text(
+                  'John Doe',
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ),
-            ),
-            SizedBox(height: 20),
-            Text(
-              'Address:', // Ganti dengan label alamat
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
+              SizedBox(height: 20),
+              Center(
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    'Email:',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
               ),
-            ),
-            Text(
-              '123 Main Street, City, Country', // Ganti dengan alamat pengguna
-              style: TextStyle(
-                fontSize: 16,
+              Container(
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  color: boxHome,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    'johndoe@gmail.com',
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
               ),
-            ),
-            SizedBox(height: 20),
-            Text(
-              'Phone:', // Ganti dengan label nomor telepon
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
+              SizedBox(height: 20),
+              Center(
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    'Address:',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
               ),
-            ),
-            Text(
-              '+1 123-456-7890', // Ganti dengan nomor telepon pengguna
-              style: TextStyle(
-                fontSize: 16,
+              Container(
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  color: boxHome,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    '123 Main Street, City, Country',
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
               ),
-            ),
-          ],
+              SizedBox(height: 20),
+              Center(
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    'Phone:',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
+              ),
+              Container(
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  color: boxHome,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    '+62 83871238217',
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
