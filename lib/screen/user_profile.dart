@@ -4,135 +4,129 @@ import 'package:login_register/utils/colors.dart';
 class UserProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: bgColor,
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back),
-          onPressed: () {
-            Navigator.pop(context);
-          },
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          elevation: 0,
+          backgroundColor: bgColor,
+          leading: IconButton(
+            icon: Icon(
+              Icons.arrow_back,
+              color: Colors.black,
+            ),
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          ),
+          title: Text(
+            'User Profile',
+            style: TextStyle(color: Colors.black),
+          ),
         ),
-        title: Text('User Profile'),
-      ),
-      body: Container(
-        color: bgColor, // Set the background color to purple
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Padding(
-                padding: EdgeInsets.only(top: 50, left: 134, right: 134),
-                child: CircleAvatar(
-                  radius: 60,
-                  backgroundImage: AssetImage('web/assets/profile.png'),
+        backgroundColor: bgColor,
+        body: Center(
+          child: Container(
+            width: 370,
+            height: 500,
+            decoration: BoxDecoration(
+              color: boxLogin,
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  width: 144,
+                  height: 144,
+                  decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      image: DecorationImage(
+                          image: AssetImage('web/assets/profile.png'))),
                 ),
-              ),
-              SizedBox(height: 10),
-              Center(
-                child: Text(
-                  'John Doe',
-                  style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
+                SizedBox(height: 20),
+                Text(
+                  'Randy April',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Text(
+                  'Email',
+                  style: TextStyle(fontSize: 12),
+                ),
+                SizedBox(
+                  height: 5,
+                ),
+                Container(
+                  width: 260,
+                  height: 46,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
                   ),
-                ),
-              ),
-              SizedBox(height: 20),
-              Center(
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text(
-                    'Email:',
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black,
+                  child: Center(
+                    child: Text(
+                      'rannsxxxx012@gmail.com',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 14,
+                      ),
                     ),
                   ),
                 ),
-              ),
-              Container(
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  color: boxHome,
-                  borderRadius: BorderRadius.circular(10),
+                SizedBox(height: 20),
+                Text(
+                  'Number Phone',
+                  style: TextStyle(fontSize: 12),
                 ),
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text(
-                    'johndoe@gmail.com',
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.black,
+                SizedBox(
+                  height: 5,
+                ),
+                Container(
+                  width: 260,
+                  height: 46,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Center(
+                    child: Text(
+                      '+6287876765454',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 14,
+                      ),
                     ),
                   ),
                 ),
-              ),
-              SizedBox(height: 20),
-              Center(
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text(
-                    'Address:',
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black,
+                SizedBox(height: 20),
+                Text(
+                  'Address',
+                  style: TextStyle(fontSize: 12),
+                ),
+                SizedBox(
+                  height: 5,
+                ),
+                Container(
+                  width: 260,
+                  height: 46,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Center(
+                    child: Text(
+                      'Jalan Merpati 69',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 14,
+                      ),
                     ),
                   ),
                 ),
-              ),
-              Container(
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  color: boxHome,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text(
-                    '123 Main Street, City, Country',
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.black,
-                    ),
-                  ),
-                ),
-              ),
-              SizedBox(height: 20),
-              Center(
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text(
-                    'Phone:',
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black,
-                    ),
-                  ),
-                ),
-              ),
-              Container(
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  color: boxHome,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text(
-                    '+62 83871238217',
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.black,
-                    ),
-                  ),
-                ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
