@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:login_register/screen/home_page.dart';
+import 'package:login_register/screen/login_page.dart';
+import 'package:login_register/screen/register_page.dart';
 import 'package:login_register/screen/splash_screen.dart';
+import 'package:login_register/screen/user_profile.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,12 +15,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: SplashScreen(),
+      routes: {
+        '/': (context) => SplashScreen(),
+        '/loginPage': (context) => LoginPage(),
+        '/registerPage': (context) => RegisterPage(),
+        '/homePage': (context) => HomePage(),
+        '/userProfile': (context) => UserProfilePage(),
+      },
     );
   }
 }

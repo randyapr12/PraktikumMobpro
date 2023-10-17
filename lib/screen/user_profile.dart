@@ -39,6 +39,7 @@ class UserProfilePage extends StatelessWidget {
                   width: 144,
                   height: 144,
                   decoration: BoxDecoration(
+                      boxShadow: [BoxShadow(color: boxHome, blurRadius: 5)],
                       shape: BoxShape.circle,
                       image: DecorationImage(
                           image: AssetImage('web/assets/profile.png'))),
@@ -62,7 +63,7 @@ class UserProfilePage extends StatelessWidget {
                   width: 260,
                   height: 46,
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: boxHome,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Center(
@@ -87,7 +88,7 @@ class UserProfilePage extends StatelessWidget {
                   width: 260,
                   height: 46,
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: boxHome,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Center(
@@ -112,7 +113,7 @@ class UserProfilePage extends StatelessWidget {
                   width: 260,
                   height: 46,
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: boxHome,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Center(
