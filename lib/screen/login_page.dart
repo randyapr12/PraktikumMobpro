@@ -14,16 +14,18 @@ class LoginPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Image.asset(
-              'web/assets/logo.png', // Ganti dengan path gambar logo yang sesuai
-              width: 276,
-              height: 300,
+              'web/assets/logo.png', 
+              width: 114,
+              height: 206,
             ),
-            SizedBox(height: 10),
+            SizedBox(
+              height: 10,
+            ),
             Text(
               'LOGIN',
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 10),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 40),
               child: Container(
@@ -31,14 +33,14 @@ class LoginPage extends StatelessWidget {
                 height: 46,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: bgColor, // Tambahkan warna pada kolom email
+                  color: bgColor, 
                 ),
                 child: TextField(
-                  style: TextStyle(fontSize: 14), // Ubah ukuran font menjadi 12
+                  style: TextStyle(fontSize: 12), 
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(
-                          10), // Tambahkan borderRadius pada border
+                          10), 
                     ),
                     labelText: 'Email or Number Phone',
                   ),
@@ -46,7 +48,7 @@ class LoginPage extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 15,
+              height: 25,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 40),
@@ -55,34 +57,37 @@ class LoginPage extends StatelessWidget {
                 height: 46,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: bgColor, // Tambahkan warna pada kolom password
+                  color: bgColor, 
                 ),
                 child: TextField(
-                  style: TextStyle(fontSize: 14), // Ubah ukuran font menjadi 12
+                  style: TextStyle(fontSize: 12), 
                   obscureText: true,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(
-                          10), // Tambahkan borderRadius pada border
+                          10), 
                     ),
                     labelText: 'Password',
                   ),
                 ),
               ),
             ),
+            SizedBox(
+              height: 5,
+            ),
             Padding(
               padding: const EdgeInsets.fromLTRB(200, 0, 40,
-                  0), // Pindahkan ke kanan dengan jarak kiri 200 dan jarak kanan 40
+                  0), 
               child: TextButton(
                 onPressed: () {},
                 child: Text(
                   'Forget Password?',
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(fontSize: 12, color: Colors.black),
                 ),
               ),
             ),
             SizedBox(
-              height: 14,
+              height: 22,
             ),
             ElevatedButton(
               onPressed: () {
@@ -92,17 +97,17 @@ class LoginPage extends StatelessWidget {
                 );
               },
               style: ElevatedButton.styleFrom(
-                primary: boxLogin, // Tambahkan warna merah
+                primary: boxLogin, 
                 shape: RoundedRectangleBorder(
                   borderRadius:
-                      BorderRadius.circular(20), // Tambahkan radius 20
+                      BorderRadius.circular(20), 
                 ),
               ),
               child: Text(
                 'Login',
                 style: TextStyle(
                   fontSize: 12,
-                  color: Colors.white, // Tambahkan warna teks putih
+                  color: Colors.white, 
                 ),
               ),
             ),

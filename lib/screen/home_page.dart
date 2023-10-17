@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_register/screen/user_profile.dart';
 import 'package:login_register/utils/colors.dart';
 
 class HomePage extends StatelessWidget {
@@ -20,18 +21,18 @@ class HomePage extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                SizedBox(height: 31),
+                SizedBox(height: 30),
                 Center(
                   child: Container(
-                    width: 290,
-                    height: 113,
+                    width: 360,
+                    height: 120,
                     decoration: BoxDecoration(
                       color: boxHome,
                       borderRadius: BorderRadius.circular(10),
                     ),
                   ),
                 ),
-                SizedBox(height: 31),
+                SizedBox(height: 30),
                 Row(
                   children: [
                     Flexible(
@@ -40,8 +41,8 @@ class HomePage extends StatelessWidget {
                         builder: (context, constraints) {
                           return Center(
                             child: Container(
-                              width: 130,
-                              height: 130,
+                              width: 150,
+                              height: 150,
                               decoration: BoxDecoration(
                                 color: boxHome,
                                 borderRadius: BorderRadius.circular(10),
@@ -58,8 +59,8 @@ class HomePage extends StatelessWidget {
                         builder: (context, constraints) {
                           return Center(
                             child: Container(
-                              width: 130,
-                              height: 130,
+                              width: 150,
+                              height: 150,
                               decoration: BoxDecoration(
                                 color: boxHome,
                                 borderRadius: BorderRadius.circular(10),
@@ -71,7 +72,7 @@ class HomePage extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: 31),
+                SizedBox(height: 30),
                 Row(
                   children: [
                     Flexible(
@@ -80,8 +81,8 @@ class HomePage extends StatelessWidget {
                         builder: (context, constraints) {
                           return Center(
                             child: Container(
-                              width: 130,
-                              height: 130,
+                              width: 150,
+                              height: 150,
                               decoration: BoxDecoration(
                                 color: boxHome,
                                 borderRadius: BorderRadius.circular(10),
@@ -98,8 +99,8 @@ class HomePage extends StatelessWidget {
                         builder: (context, constraints) {
                           return Center(
                             child: Container(
-                              width: 130,
-                              height: 130,
+                              width: 150,
+                              height: 150,
                               decoration: BoxDecoration(
                                 color: boxHome,
                                 borderRadius: BorderRadius.circular(10),
@@ -111,7 +112,7 @@ class HomePage extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: 31),
+                SizedBox(height: 30),
                 Row(
                   children: [
                     Flexible(
@@ -120,8 +121,8 @@ class HomePage extends StatelessWidget {
                         builder: (context, constraints) {
                           return Center(
                             child: Container(
-                              width: 130,
-                              height: 130,
+                              width: 150,
+                              height: 150,
                               decoration: BoxDecoration(
                                 color: boxHome,
                                 borderRadius: BorderRadius.circular(10),
@@ -138,8 +139,8 @@ class HomePage extends StatelessWidget {
                         builder: (context, constraints) {
                           return Center(
                             child: Container(
-                              width: 130,
-                              height: 130,
+                              width: 150,
+                              height: 150,
                               decoration: BoxDecoration(
                                 color: boxHome,
                                 borderRadius: BorderRadius.circular(10),
@@ -148,6 +149,36 @@ class HomePage extends StatelessWidget {
                           );
                         },
                       ),
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: 35,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    IconButton(
+                      icon: Icon(Icons.home),
+                      onPressed: () {
+                        // Do something
+                      },
+                    ),
+                    IconButton(
+                      icon: Icon(Icons.favorite),
+                      onPressed: () {
+                        // Do something
+                      },
+                    ),
+                    IconButton(
+                      icon: Icon(Icons.person),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => UserProfilePage()),
+                        );
+                      },
                     ),
                   ],
                 ),

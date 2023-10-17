@@ -12,9 +12,9 @@ class RegisterPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Image.asset(
-              'web/assets/logo.png', // Ganti dengan path gambar logo yang sesuai
-              width: 276,
-              height: 300,
+              'web/assets/logo.png', 
+              width: 114,
+              height: 206,
             ),
             SizedBox(height: 10),
             Text(
@@ -29,14 +29,14 @@ class RegisterPage extends StatelessWidget {
                 height: 46,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: bgColor, // Tambahkan warna pada kolom email
+                  color: bgColor, 
                 ),
                 child: TextField(
-                  style: TextStyle(fontSize: 14), // Ubah ukuran font menjadi 12
+                  style: TextStyle(fontSize: 14), 
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(
-                          10), // Tambahkan borderRadius pada border
+                          10), 
                     ),
                     labelText: 'Email or Number Phone',
                   ),
@@ -53,15 +53,15 @@ class RegisterPage extends StatelessWidget {
                 height: 46,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: bgColor, // Tambahkan warna pada kolom password
+                  color: bgColor, 
                 ),
                 child: TextField(
-                  style: TextStyle(fontSize: 14), // Ubah ukuran font menjadi 12
+                  style: TextStyle(fontSize: 14), 
                   obscureText: true,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(
-                          10), // Tambahkan borderRadius pada border
+                          10), 
                     ),
                     labelText: 'Password',
                   ),
@@ -78,10 +78,10 @@ class RegisterPage extends StatelessWidget {
                 height: 46,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: bgColor, // Tambahkan warna pada kolom password
+                  color: bgColor, 
                 ),
                 child: TextField(
-                  style: TextStyle(fontSize: 14), // Ubah ukuran font menjadi 12
+                  style: TextStyle(fontSize: 14), 
                   obscureText: true,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
@@ -102,17 +102,17 @@ class RegisterPage extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                  primary: boxLogin, // Tambahkan warna merah
+                  primary: boxLogin, 
                   shape: RoundedRectangleBorder(
                     borderRadius:
-                        BorderRadius.circular(20), // Tambahkan radius 20
+                        BorderRadius.circular(20), 
                   ),
                 ),
                 child: Text(
                   'Register',
                   style: TextStyle(
                       fontSize: 12,
-                      color: Colors.white), // Tambahkan warna teks putih
+                      color: Colors.white), 
                 ),
               ),
             ),
